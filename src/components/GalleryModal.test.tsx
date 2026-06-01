@@ -231,15 +231,15 @@ describe('GalleryModal', () => {
       expect(screen.getByText('Fourth Coffee')).toBeTruthy();
     });
 
-    // Click the "Load" button for Fourth Coffee
+    // Click the first non-active ontology's "Load" button.
     const loadButtons = screen.getAllByText('Load');
     await user.click(loadButtons[0]);
 
     const state = useAppStore.getState();
-    expect(state.currentOntology.name).toBe('Fourth Coffee');
-    expect(state.currentOntology.entityTypes).toHaveLength(3);
+    expect(state.currentOntology.name).toBe('Hospital Network');
+    expect(state.currentOntology.entityTypes).toHaveLength(4);
     // Now navigates to deep link instead of calling onClose
-    expect(window.location.hash).toBe('#/catalogue/official/cosmic-coffee');
+    expect(window.location.hash).toBe('#/catalogue/community/drsmith/hospital-net');
   });
 
   it('shows "Community" badge only on community entries', async () => {
