@@ -73,7 +73,7 @@ export function processQuery(query: string, ontology: Ontology): QueryResponse {
   const entities = ontology.entityTypes;
   const relationships = ontology.relationships;
 
-  if (ontology.name === 'Cosmic Coffee Company') {
+  if (ontology.name === 'Fourth Coffee') {
     const demoResponse = nlQueryResponses.find(response =>
       matchesDemoQuery(normalizedNoPunctuation, response.query, response.matches)
     );
@@ -84,7 +84,7 @@ export function processQuery(query: string, ontology: Ontology): QueryResponse {
         result: demoResponse.result,
         highlightEntities: demoResponse.highlightEntities,
         highlightRelationships: demoResponse.highlightRelationships,
-        interpretation: 'Detected: Cosmic Coffee sample query'
+        interpretation: 'Detected: Fourth Coffee sample query'
       };
     }
   }

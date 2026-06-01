@@ -38,7 +38,7 @@ const ontology: Ontology = {
 };
 
 describe('generateQuestsForOntology', () => {
-  it('keeps default Cosmic Coffee query quests executable in the live query engine', () => {
+  it('keeps default Fourth Coffee query quests executable in the live query engine', () => {
     const issues = validateQueryQuestSteps(defaultQuests, cosmicCoffeeOntology);
 
     expect(issues).toEqual([]);

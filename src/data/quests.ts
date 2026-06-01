@@ -26,7 +26,7 @@ export const quests: Quest[] = [
   {
     id: "quest-1",
     title: "Meet the Entities",
-    description: "Discover the core building blocks of the Cosmic Coffee ontology by exploring entity types.",
+    description: "Discover the core building blocks of the Fourth Coffee ontology by exploring entity types.",
     difficulty: "beginner",
     category: "exploration",
     steps: [
@@ -231,21 +231,21 @@ export const nlQueryResponses: QueryResponse[] = [
   {
     query: "what orders did arif ramadhan place",
     matches: ["orders arif", "arif ramadhan orders", "arif placed"],
-    result: "Arif Ramadhan's orders:\n• ORD-2025-001 - $12.50 (Completed)\n  Items: Ethiopian Single Origin x2, Cosmic Latte x1\n  Store: Downtown Seattle",
+    result: "Arif Ramadhan's orders:\n• ORD-2025-001 - $12.50 (Completed)\n  Items: Ethiopian Single Origin x2, Colombian Latte x1\n  Store: Downtown Seattle",
     highlightEntities: ["customer", "order", "store"],
     highlightRelationships: ["customer_places_order", "order_processed_at_store"]
   },
   {
     query: "how many stores are in seattle",
     matches: ["stores seattle", "seattle stores", "how many stores"],
-    result: "Found 2 stores in Seattle:\n• Cosmic Coffee - Downtown Seattle (45 seats)\n• Cosmic Coffee - Capitol Hill (32 seats)",
+    result: "Found 2 stores in Seattle:\n• Fourth Coffee - Downtown Seattle (45 seats)\n• Fourth Coffee - Capitol Hill (32 seats)",
     highlightEntities: ["store"],
     highlightRelationships: []
   },
   {
-    query: "show supply chain for cosmic latte",
-    matches: ["supply chain", "cosmic latte", "where does cosmic latte come from"],
-    result: "Supply chain for Cosmic Latte:\n• Bean Origin: Colombia 🇨🇴\n• Supplier: Colombian Mountain Roasters\n• Certification: Rainforest Alliance 🌿\n• Latest Shipment: SHIP-001 (Delivered Jan 27)",
+    query: "show supply chain for colombian latte",
+    matches: ["supply chain", "colombian latte", "where does colombian latte come from"],
+    result: "Supply chain for Colombian Latte:\n• Bean Origin: Colombia 🇨🇴\n• Supplier: Colombian Mountain Roasters\n• Certification: Rainforest Alliance 🌿\n• Latest Shipment: SHIP-001 (Delivered Jan 27)",
     highlightEntities: ["product", "supplier", "shipment"],
     highlightRelationships: ["product_sourced_from_supplier", "shipment_from_supplier"]
   },
